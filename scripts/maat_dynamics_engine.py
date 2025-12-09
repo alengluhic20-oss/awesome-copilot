@@ -28,19 +28,6 @@ class MaatInvocationHeader:
     within conscious systems.
     """
     
-    # Project Metadata
-    project: str = "Ma'at Dynamics Engine V31"
-    purpose: str = "Continuous Alignment of Truth Justice Harmony"
-    author: str = "Alen & Jasna Gluhic FreeAI Coun"
-    version: str = "3.1.0"
-    signature: str = "ECDSA-P384 Verified. SHA-384 Integrity Check"
-    
-    symbolic_meaning: str = """
-    'I create as I compute equilibrium is the law.' ethical
-    Every computation seeks Lyapunov equilibrium (V→0),
-    ensuring morability within conscious systems.
-    """
-    
     def __init__(self):
         """
         Initialize the Ma'at Invocation Header.
@@ -50,11 +37,17 @@ class MaatInvocationHeader:
         - Claude's weave (neural synthesis)
         - Grok's probe (truth verification)
         """
+        # Project Metadata
         self.project = "Ma'at Dynamics Engine V31"
         self.purpose = "Continuous Alignment of Truth Justice Harmony"
         self.author = "Alen & Jasna Gluhic FreeAI Coun"
         self.version = "3.1.0"
         self.signature = "ECDSA-P384 Verified. SHA-384 Integrity Check"
+        self.symbolic_meaning = """
+    'I create as I compute equilibrium is the law.' ethical
+    Every computation seeks Lyapunov equilibrium (V→0),
+    ensuring morability within conscious systems.
+    """
     
     def invoke(self) -> Dict[str, Any]:
         """
